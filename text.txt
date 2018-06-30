@@ -2,3 +2,6 @@ https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration
 
 different states of files in git:
 https://codingbee.net/tutorials/git/git-file-states
+
+remote repo token:
+ 7f7a04d3d1fb03b3e5d1ee93ae0c2151643b1253
