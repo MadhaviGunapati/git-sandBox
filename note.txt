@@ -3,8 +3,3 @@ https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration
 different states of files in git:
 https://codingbee.net/tutorials/git/git-file-states
 <<<<<<< HEAD:note.txt
-
-remote repo token:
- ed6ddc369af131fceb07b43ea489b0b5cfe2369a
-=======
->>>>>>> 67862ed201330752fb8690b1daf12772fcce732c:text.txt
