@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        h1,h2, h3{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+        }
+    table, th, td{
+        border: 1px solid black;
+        padding:10px;
+    }
+    th,td{
+        width: 50%;      
+    }
+    span{
+        font-weight:bold;
+    }
+    a{
+        text-decoration: none;
+        color:blueviolet;
+        font-weight: bold;
+    }
+    .files{
+        width:80%;
+        margin: 0 auto;
+        line-height: 1.3rem;
+        font-size: 125%;
+    }
+    </style>
+</head>
+<body>
+    <h1>Assignment 1</h1>
+    <h2>Distributed Version Control Vs Centralized Version Control</h2>
+    <table>
+        <tr><th>Distributed</th>
+            <th>Centralized</th>
+        </tr>
+        <tr>
+            <td>
+                <h3>Types of VCS</h3>
+                <ul>
+                    <li><span>Git</span>, (written in C) used by the Linux Kernel and Ruby on Rails.</li>
+                    <li><span>Mercurial</span>, (written in Python) used by Mozilla and OpenJDK.</li>
+                    <li><span>Bazaar</span>, (written in Python) used by Ubuntu developers.</li>
+                    <li><span>Darcs</span>, (written in Haskell).</li>
+                </ul>
+            </td>
+            <td>  
+                <h3>Types of VCS</h3>
+                <ul>
+                    <li><span>SVN </span>(Apache Subversion)</li>
+                    <li><span>Perforce</span> (Perforce, sometimes referred to as Perforce Software, is a Minneapolis, Minnesota-based developer of software used for application development, including version control software, web-based repository management, developer collaboration, application lifecycle management and Agile planning software.)</li>
+                    <li><span>IBM Rational ClearCase </span>(An enterprise-grade configuration management system that provides controlled access to software assets)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+           <td><p>Distributed VCS, everyone has a local copy of the entire work’s history. This means that it is not necessary to be online to change revisions or add changes to the work.</p>
+                <p>“Distributed” comes from the fact that there isn’t a central entity in charge of the work’s history, so that anyone can sync with any other team member. This helps avoid failure due to a crash of the central versioning server. Open source projects, such as Mozilla Firefox, tend to use this type of versioning.</p>
+        </td>
+           <td>Centralized VCSs keep the history of changes on a central server from which everyone requests the latest version of the work and pushes the latest changes to. This means that everyone sharing the server also shares everyone’s work. </td> 
+        </tr>
+        <tr>
+            <td><p>like <span>Git</span>, is considerably faster and easier to work with when it comes to creating and merging branches and tags. Also, they allow for flexible workflows, tailored to one’s project and team needs.</p></td>
+            <td>
+                <p>Centralized VCS allows more access control via folder permissions or by allowing checkout of just the needed sub tree from the repository tree</p>
+                <p>Also these systems are more prone to be backed up regularly, allowing for a more reliable environment of work. The quantity of development tools and Integrated Development Environments (IDEs) integrating with them is considerable</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Improvements</h3>
+                <p>Distributed VCS, on the other hand, doesn’t allow for partial check out of the repository</p>
+                <p>Also, integration with many IDEs and other development tools (like file comparers) are not yet the rule nowadays and, since there are little repository managers with a Graphical User Interface for Distributed VCSs, it can be very hard in the beginning to be efficient and proficient with this type of Distributed VCSs. </p>
+            </td>
+            <td>
+                    <h3>Improvements</h3>
+                    <p>Tools like SVN are slow when it comes to process transactions and working with tags and branches can be very tricky as well</p>
+                    <p>Also, when someone on the team checks-in buggy code that takes down the project’s application, the whole team’s work is potentially affected since everyone has to have the same codebase.</p>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>GIT</h3>
+                <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+            </td>
+            <td>
+                <h3>SVN</h3>
+                <p>Subversion is an Open Source version control system that manages your files and directories history over time</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Advantages of GIT</h3>
+                <ul>
+                    <li>One of the biggest advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge. </li>
+                    <li>Distributed Developments</li>
+                    <li>Pull Requests</li>
+                    <li>workflows
+                        <ul>
+                            <li>Initialize the central repository</li>
+                            <li>Hosted central repositories</li>
+                            <li>Clone the central repository</li>
+                            <li>Make changes and commit</li>
+                            <li>Push new commits to central repository</li>
+                            <li>Managing conflicts</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <h3>About SVN</h3>
+                <ul>
+                    <li>SVN is centralized, development teams always have one central repository for one or many local checkouts, with any and all changes able to be contributed back to the central repo as soon as they’re ready.</li>
+                    <li>SVN is for HOSTING</li>
+                    <li>SVN lifecycle
+                        <ul>
+                            <li>Checkout a repository</li>
+                            <li>Perform changes</li>
+                            <li>Review changes</li>
+                            <li>Revert changes</li>
+                            <li>Resolve conflicts</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <h2>About GIT Commands</h2>
+    <table>
+            <thead>
+            <tr>
+            <th>Git task</th>
+            <th>Notes</th>
+            <th>Git commands</th>
+            </tr>
+            </thead>
+            <thead>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config" title="Tell Git who you are">Tell Git who you are</a></td>
+            <td>Configure the author name and email address to be used with your commits.Note that Git strips some characters (for example trailing periods) from user.name.</td>
+            <td>git config --global user.name &quot;Sam Smith&quot;<br />
+            git config --global user.email sam@example.com</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init" title="Create a new local repository">Create a new local repository</a></td>
+            <td>&nbsp;</td>
+            <td>git init</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone" title="Check out a repository">Check out a repository</a></td>
+            <td>Create a working copy of a local repository:</td>
+            <td>git clone /path/to/repository</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>For a remote server, use:</td>
+            <td>git clone username@host:/path/to/repository</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/saving-changes/git-add" title="Add files">Add files</a></td>
+            <td>Add one or more files to staging (index):</td>
+            <td>git add &lt;filename&gt;git add *</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/saving-changes/git-commit" title="Commit">Commit</a></td>
+            <td>Commit changes to head (but not yet to the remote repository):</td>
+            <td>git commit -m &quot;Commit message&quot;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Commit any files you&#39;ve added with git add, and also commit any files you&#39;ve changed since then:</td>
+            <td>git commit -a</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/syncing/git-push" title="Push">Push</a></td>
+            <td>Send changes to the master branch of your remote repository:</td>
+            <td>git push origin master</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-status" title="Status">Status</a></td>
+            <td>List the files you&#39;ve changed and those you still need to add or commit:</td>
+            <td>git status</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/syncing/git-remote" title="Connect to a remote repository">Connect to a remote repository</a></td>
+            <td>If you haven&#39;t connected your local repository to a remote server, add the server to be able to push to it:</td>
+            <td>git remote add origin &lt;server&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>List all currently configured remote repositories:</td>
+            <td>git remote -v</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/using-branches" title="Branches">Branches</a></td>
+            <td>Create a new branch and switch to it:</td>
+            <td>git checkout -b &lt;branchname&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Switch from one branch to another:</td>
+            <td>git checkout &lt;branchname&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>List all the branches in your repo, and also tell you what branch you&#39;re currently in:</td>
+            <td>git branch</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Delete the feature branch:</td>
+            <td>git branch -d &lt;branchname&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Push the branch to your remote repository, so others can use it:</td>
+            <td>git push origin &lt;branchname&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Push all branches to your remote repository:</td>
+            <td>git push --all origin</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Delete a branch on your remote repository:</td>
+            <td>git push origin :&lt;branchname&gt;</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull" title="Update from the remote repository">Update from the remote repository</a></td>
+            <td>Fetch and merge changes on the remote server to your working directory:</td>
+            <td>git pull</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>To merge a different branch into your active branch:</td>
+            <td>git merge &lt;branchname&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>View all the merge conflicts:View the conflicts against the base file:Preview changes, before merging:</td>
+            <td>git diff<br />
+            git diff --base &lt;filename&gt;<br />
+            git diff &lt;sourcebranch&gt; &lt;targetbranch&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>After you have manually resolved any conflicts, you mark the changed file:</td>
+            <td>git add &lt;filename&gt;</td>
+            </tr>
+            <tr>
+            <td>Tags</td>
+            <td>You can use tagging to mark a significant changeset, such as a release:</td>
+            <td>git tag 1.0.0 &lt;commitID&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:</td>
+            <td>git log</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Push all tags to remote repository:</td>
+            <td>git push --tags origin</td>
+            </tr>
+            <tr>
+            <td><a href="https://www.atlassian.com/git/tutorials/undoing-changes" title="Undo local changes">Undo local changes</a></td>
+            <td>If you mess up, you can replace the changes in your working tree with the last content in head:Changes already added to the index, as well as new files, will be kept.</td>
+            <td>git checkout -- &lt;filename&gt;</td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            <td>Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:</td>
+            <td>git fetch origin<br />
+            git reset --hard origin/master</td>
+            </tr>
+            <tr>
+            <td>Search</td>
+            <td>Search the working directory for foo():</td>
+            <td>git grep &quot;foo()&quot;</td>
+            </tr>
+            </thead>
+            </table>
+            <h2><a href="https://codingbee.net/tutorials/git/git-file-states" target="_blank" title="Please click on me for more info">Different States of Files in GIT </a></h2>
+            <ul class="files">
+                <li><span>Tracked Files </span>: These are files that were in the last snapshot (aka); they can be in one of the following sub states
+                    <ul>
+                        <li><span>unmodified </span>– These are any files that haven’t been modified since the last commit. They will still be included in the next commit, but remain as is.</li>
+                        <li><span>modified </span>– These are files that have been modified since the last commit (we probably modified these as part of bug fixes). These files will be included in the next commit, but will be included in thier respective new form.</li>
+                        <li><span>staged </span>– These are files that are either not present in the last commit (e.g. newly created files) or are “modified” files that we tell git to include in the next commit. Files are added to the staging using git’s “add” command.</li>
+                    </ul>
+                </li>
+                <li><span>Untracked Files </span>: these are any files that are not being tracked, i.e. git isn’t of the existance of these files. You can change the state of these files to “tracked – staged” by using git’s “add” command
+                </li>
+            </ul>
+
+</body>
+</html>

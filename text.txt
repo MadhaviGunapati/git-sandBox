@@ -1,4 +1,2 @@
-https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration
-
-different states of files in git:
-https://codingbee.net/tutorials/git/git-file-states
+adding new text.
+add one more line.
