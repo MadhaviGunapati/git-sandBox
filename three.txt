@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 I am working on a feature and in the middle I want to merge the changes from the bug_fix.
 dding some new text to bug_fix branch
+=======
+new repository
+some new text added..
+some more new text added...
+some more and more text adding
+>>>>>>> 874f28183f6c00a02653e598792a7d6ebe965f67
 
